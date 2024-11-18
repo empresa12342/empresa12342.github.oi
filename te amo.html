@@ -20,6 +20,9 @@
 
     .heart-container {
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .heart {
@@ -133,6 +136,39 @@
       }
       100% {
         opacity: 0;
+      }
+    }
+
+    /* Estilos responsivos */
+    @media (max-width: 600px) {
+      .heart {
+        width: 150px;
+        height: 150px;
+      }
+
+      .message {
+        font-size: 18px;
+      }
+
+      .footer-text {
+        font-size: 14px;
+        padding: 0 10px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .heart {
+        width: 120px;
+        height: 120px;
+      }
+
+      .message {
+        font-size: 16px;
+      }
+
+      .footer-text {
+        font-size: 12px;
+        padding: 0 5px;
       }
     }
   </style>
